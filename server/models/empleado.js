@@ -3,19 +3,8 @@ const Schema = mongoose.Schema;
 
 let empleadoSchema = new Schema({
 
-    id_usuario: {
-        type: ObjectId,
-        required: true
-    },    
-
-
-    id_departamento: {
-        type: ObjectId,
-        required: true
-    },
-
 nombre_del_puesto: {
-    type: string,
+    type: String,
     required: true
 },
 
@@ -41,4 +30,4 @@ activo: {
 
 });
 
-module.exports = mongoose.model('empleado', empleadoSchema);
+module.exports = mongoose.model('Empleado', empleadoSchema);

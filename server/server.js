@@ -32,9 +32,9 @@ app.get('/', function(req, res) {
 
 //rutas
 
-app.use(require(''));
-app.use(require(''));
-app.use(require(''));
+app.use(require('./routes/usuario'));
+app.use(require('./routes/empleado'));
+app.use(require('./routes/departamento'));
 
 
 //conexion

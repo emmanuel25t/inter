@@ -15,7 +15,7 @@ let usuarioSchema = new Schema({
     },
 
 
-    segundo_apelido: {
+    segundo_apellido: {
             type: String,
             required: [true, 'Se necesita el segundo apellido']
         },
@@ -24,7 +24,7 @@ let usuarioSchema = new Schema({
            type: Number,
         required: true
     },
-    CURP: {
+    curp: {
         type: String,
         required: false
     },
@@ -47,4 +47,4 @@ let usuarioSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('usuario', usuarioSchema);
+module.exports = mongoose.model('Usuario', usuarioSchema);

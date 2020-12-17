@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 let departamentoSchema = new Schema({
 
     id_jefe_de_area: {
-        type: ObjectId,
+        type: Schema.Types.ObjectId,
         required: true
   },
 
@@ -31,4 +31,4 @@ activo: {
 
 });
 
-module.exports = mongoose.model('departamento', departamentoSchema);
+module.exports = mongoose.model('Departamento', departamentoSchema);
